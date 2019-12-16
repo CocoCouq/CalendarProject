@@ -1,0 +1,104 @@
+/* CSS par Guillaume */
+
+/* GLOBAL */
+
+/* le Body prend toute la largeur, on place des marges afin de centrer le calendrier*/
+
+*:not(input) {
+  cursor: default;
+}
+
+body {
+  width: 100%;
+  margin-right: 5vw;
+  margin-left: auto;
+  background-color: lightgray;
+}
+
+/* dimensions de la table, la même que le body afin de prendre toute la largeur et déclaration de la font*/
+
+table {
+  width: 100%;
+  font-family: "playfair_display_scregular";
+}
+
+/*H1 avec titre du projet */
+
+h1 {
+  text-align: center;
+  font-family: "playfair_display_scbold";
+}
+
+h3 {
+  font-family: "playfair_display_scbold";
+  text-align: center;
+}
+
+/* Class */
+
+/*Couleur des mois impair et habillement de ceux-ci */
+
+.impair {
+  background-color: darkgray;
+  color: black;
+  border-top-left-radius: 10% 2%;
+  border-bottom-left-radius: 10% 2%;
+  border-bottom-right-radius: 10% 2%;
+  border-top-right-radius: 10% 2%;
+  box-shadow: 3px 5px 7px 12px rgba(0, 0, 0, 0.31);
+}
+
+/* Couleur des mois pair et habillement de ceux-ci*/
+
+.pair {
+  background-color: gray;
+  color: white;
+  border-top-left-radius: 10% 2%;
+  border-bottom-left-radius: 10% 2%;
+  border-bottom-right-radius: 10% 2%;
+  border-top-right-radius: 10% 2%;
+  box-shadow: 2px 4px 6px 12px rgba(0, 0, 0, 0.31);
+}
+
+/* habillement de la colonne jour*/
+
+.colonne1 {
+  background-color: white;
+  border-top-left-radius: 10% 2%;
+  border-bottom-left-radius: 10% 2%;
+  border-bottom-right-radius: 10% 2%;
+  border-top-right-radius: 10% 2%;
+  box-shadow: 6px 7px 9px 12px rgba(0, 0, 0, 0.31);
+}
+
+/*Taille des colonnes*/
+
+.centre {
+  width: 5vw;
+}
+
+/*alignement des mois dans les colonnes*/
+
+.align {
+  text-align: center;
+  margin-top: 0.5vh;
+}
+
+/* Petit marge pour décoller les chiffres*/
+
+.margin {
+  margin-left: 0.5vw;
+}
+
+/*Habillement et positionnement de l'input*/
+
+#userInput {
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.31);
+  background: #ebebeb;
+  height: 3vh;
+  text-align: center;
+  font-family: "playfair_display_scbold";
+  margin: 1.5vh 43.5vw;
+}

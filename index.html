@@ -1,0 +1,577 @@
+<!--HTML par Guillaume et Corentin-->
+
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Le Calendier</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/media.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+</head>
+
+<body>
+
+  <!--Titre du projet-->
+  <h1>CALENDRIER INFINI</h1>
+  <input type="text" id="userInput" placeholder="Quelle Année?">
+  <!--Table qui contiendra toutes les données-->
+  <table>
+    <tbody>
+      <!--Colonne avec les jours-->
+      <td class="colonne1 centre" colspan="2">
+        <div class="align">Jours</div>
+        <div id="day0" class="margin" data-value="Samedi">Samedi</div>
+        <div id="day1" class="margin" data-value="Dimanche">Dimanche</div>
+        <div id="day2" class="margin" data-value="Lundi">Lundi</div>
+        <div id="day3" class="margin" data-value="Mardi">Mardi</div>
+        <div id="day4" class="margin" data-value="Mercredi">Mercredi</div>
+        <div id="day5" class="margin" data-value="Jeudi">Jeudi</div>
+        <div id="day6" class="margin" data-value="Vendredi">Vendredi</div>
+        <div id="day8" class="margin">Samedi</div>
+        <div id="day9" class="margin">Dimanche</div>
+        <div id="day10" class="margin">Lundi</div>
+        <div id="day11" class="margin">Mardi</div>
+        <div id="day12" class="margin">Mercredi</div>
+        <div id="day13" class="margin">Jeudi</div>
+        <div id="day14" class="margin">Vendredi</div>
+        <div id="day15" class="margin">Samedi</div>
+        <div id="day16" class="margin">Dimanche</div>
+        <div id="day17" class="margin">Lundi</div>
+        <div id="day18" class="margin">Mardi</div>
+        <div id="day19" class="margin">Mercredi</div>
+        <div id="day20" class="margin">Jeudi</div>
+        <div id="day21" class="margin">Vendredi</div>
+        <div id="day22" class="margin">Samedi</div>
+        <div id="day23" class="margin">Dimanche</div>
+        <div id="day24" class="margin">Lundi</div>
+        <div id="day25" class="margin">Mardi</div>
+        <div id="day26" class="margin">Mercredi</div>
+        <div id="day27" class="margin">Jeudi</div>
+        <div id="day28" class="margin">Vendredi</div>
+        <div id="day29" class="margin">Samedi</div>
+        <div id="day30" class="margin">Dimanche</div>
+        <div id="day31" class="margin">Lundi</div>
+        <div id="day32" class="margin">Mardi</div>
+        <div id="day33" class="margin">Mercredi</div>
+        <div id="day34" class="margin">Jeudi</div>
+        <div id="day35" class="margin">Vendredi</div>
+        <div id="day36" class="margin">Samedi</div>
+        <div id="day37" class="margin">Dimanche</div>
+      </td>
+      <!--Colonne pour le mois, elles seront toutes pareilles.-->
+      <td class="impair centre" colspan="3">
+        <div class="align">Janvier</div>
+        <div id="mois1jour0" class="margin" data-value="Samedi">.</div>
+        <div id="mois1jour1" class="margin" data-value="Dimanche">.</div>
+        <div id="mois1jour2" class="margin" data-value="Lundi">.</div>
+        <div id="mois1jour3" class="margin" data-value="Mardi">.</div>
+        <div id="mois1jour4" class="margin" data-value="Mercredi">.</div>
+        <div id="mois1jour5" class="margin" data-value="Jeudi">.</div>
+        <div id="mois1jour6" class="margin" data-value="Vendredi">.</div>
+        <div id="mois1jour7" class="margin" data-value="Samedi">.</div>
+        <div id="mois1jour8" class="margin">.</div>
+        <div id="mois1jour9" class="margin">.</div>
+        <div id="mois1jour10" class="margin">.</div>
+        <div id="mois1jour11" class="margin">.</div>
+        <div id="mois1jour12" class="margin">.</div>
+        <div id="mois1jour13" class="margin">.</div>
+        <div id="mois1jour14" class="margin">.</div>
+        <div id="mois1jour15" class="margin">.</div>
+        <div id="mois1jour16" class="margin">.</div>
+        <div id="mois1jour17" class="margin">.</div>
+        <div id="mois1jour18" class="margin">.</div>
+        <div id="mois1jour19" class="margin">.</div>
+        <div id="mois1jour20" class="margin">.</div>
+        <div id="mois1jour21" class="margin">.</div>
+        <div id="mois1jour22" class="margin">.</div>
+        <div id="mois1jour23" class="margin">.</div>
+        <div id="mois1jour24" class="margin">.</div>
+        <div id="mois1jour25" class="margin">.</div>
+        <div id="mois1jour26" class="margin">.</div>
+        <div id="mois1jour27" class="margin">.</div>
+        <div id="mois1jour28" class="margin">.</div>
+        <div id="mois1jour29" class="margin">.</div>
+        <div id="mois1jour30" class="margin">.</div>
+        <div id="mois1jour31" class="margin">.</div>
+        <div id="mois1jour32" class="margin">.</div>
+        <div id="mois1jour33" class="margin">.</div>
+        <div id="mois1jour34" class="margin">.</div>
+        <div id="mois1jour35" class="margin">.</div>
+        <div id="mois1jour36" class="margin">.</div>
+
+      </td>
+      <td class="pair centre" colspan="3 ">
+        <div class="align">Fevrier</div>
+        <div id="mois2jour0" class="margin" data-value="Samedi">.</div>
+        <div id="mois2jour1" class="margin" data-value="Dimanche">.</div>
+        <div id="mois2jour2" class="margin" data-value="Lundi">.</div>
+        <div id="mois2jour3" class="margin" data-value="Mardi">.</div>
+        <div id="mois2jour4" class="margin" data-value="Mercredi">.</div>
+        <div id="mois2jour5" class="margin" data-value="Jeudi">.</div>
+        <div id="mois2jour6" class="margin" data-value="Vendredi">.</div>
+        <div id="mois2jour7" class="margin" data-value="Samedi">.</div>
+        <div id="mois2jour8" class="margin">.</div>
+        <div id="mois2jour9" class="margin">.</div>
+        <div id="mois2jour10" class="margin">.</div>
+        <div id="mois2jour11" class="margin">.</div>
+        <div id="mois2jour12" class="margin">.</div>
+        <div id="mois2jour13" class="margin">.</div>
+        <div id="mois2jour14" class="margin">.</div>
+        <div id="mois2jour15" class="margin">.</div>
+        <div id="mois2jour16" class="margin">.</div>
+        <div id="mois2jour17" class="margin">.</div>
+        <div id="mois2jour18" class="margin">.</div>
+        <div id="mois2jour19" class="margin">.</div>
+        <div id="mois2jour20" class="margin">.</div>
+        <div id="mois2jour21" class="margin">.</div>
+        <div id="mois2jour22" class="margin">.</div>
+        <div id="mois2jour23" class="margin">.</div>
+        <div id="mois2jour24" class="margin">.</div>
+        <div id="mois2jour25" class="margin">.</div>
+        <div id="mois2jour26" class="margin">.</div>
+        <div id="mois2jour27" class="margin">.</div>
+        <div id="mois2jour28" class="margin">.</div>
+        <div id="mois2jour29" class="margin">.</div>
+        <div id="mois2jour30" class="margin">.</div>
+        <div id="mois2jour31" class="margin">.</div>
+        <div id="mois2jour32" class="margin">.</div>
+        <div id="mois2jour33" class="margin">.</div>
+        <div id="mois2jour34" class="margin">.</div>
+        <div id="mois2jour35" class="margin">.</div>
+        <div id="mois2jour36" class="margin">.</div>
+
+      </td>
+      <td class="impair centre" colspan="3 ">
+        <div class="align">Mars</div>
+
+        <div id="mois3jour0" class="margin" data-value="Samedi">.</div>
+        <div id="mois3jour1" class="margin" data-value="Dimanche">.</div>
+        <div id="mois3jour2" class="margin" data-value="Lundi">.</div>
+        <div id="mois3jour3" class="margin" data-value="Mardi">.</div>
+        <div id="mois3jour4" class="margin" data-value="Mercredi">.</div>
+        <div id="mois3jour5" class="margin" data-value="Jeudi">.</div>
+        <div id="mois3jour6" class="margin" data-value="Vendredi">.</div>
+        <div id="mois3jour7" class="margin" data-value="Samedi">.</div>
+        <div id="mois3jour8" class="margin">.</div>
+        <div id="mois3jour9" class="margin">.</div>
+        <div id="mois3jour10" class="margin">.</div>
+        <div id="mois3jour11" class="margin">.</div>
+        <div id="mois3jour12" class="margin">.</div>
+        <div id="mois3jour13" class="margin">.</div>
+        <div id="mois3jour14" class="margin">.</div>
+        <div id="mois3jour15" class="margin">.</div>
+        <div id="mois3jour16" class="margin">.</div>
+        <div id="mois3jour17" class="margin">.</div>
+        <div id="mois3jour18" class="margin">.</div>
+        <div id="mois3jour19" class="margin">.</div>
+        <div id="mois3jour20" class="margin">.</div>
+        <div id="mois3jour21" class="margin">.</div>
+        <div id="mois3jour22" class="margin">.</div>
+        <div id="mois3jour23" class="margin">.</div>
+        <div id="mois3jour24" class="margin">.</div>
+        <div id="mois3jour25" class="margin">.</div>
+        <div id="mois3jour26" class="margin">.</div>
+        <div id="mois3jour27" class="margin">.</div>
+        <div id="mois3jour28" class="margin">.</div>
+        <div id="mois3jour29" class="margin">.</div>
+        <div id="mois3jour30" class="margin">.</div>
+        <div id="mois3jour31" class="margin">.</div>
+        <div id="mois3jour32" class="margin">.</div>
+        <div id="mois3jour33" class="margin">.</div>
+        <div id="mois3jour34" class="margin">.</div>
+        <div id="mois3jour35" class="margin">.</div>
+        <div id="mois3jour36" class="margin">.</div>
+
+      </td>
+      <td class="pair centre" colspan="3 ">
+        <div class="align">Avril</div>
+        <div id="mois4jour0" class="margin" data-value="Samedi">.</div>
+        <div id="mois4jour1" class="margin" data-value="Dimanche">.</div>
+        <div id="mois4jour2" class="margin" data-value="Lundi">.</div>
+        <div id="mois4jour3" class="margin" data-value="Mardi">.</div>
+        <div id="mois4jour4" class="margin" data-value="Mercredi">.</div>
+        <div id="mois4jour5" class="margin" data-value="Jeudi">.</div>
+        <div id="mois4jour6" class="margin" data-value="Vendredi">.</div>
+        <div id="mois4jour7" class="margin" data-value="Samedi">.</div>
+        <div id="mois4jour8" class="margin">.</div>
+        <div id="mois4jour9" class="margin">.</div>
+        <div id="mois4jour10" class="margin">.</div>
+        <div id="mois4jour11" class="margin">.</div>
+        <div id="mois4jour12" class="margin">.</div>
+        <div id="mois4jour13" class="margin">.</div>
+        <div id="mois4jour14" class="margin">.</div>
+        <div id="mois4jour15" class="margin">.</div>
+        <div id="mois4jour16" class="margin">.</div>
+        <div id="mois4jour17" class="margin">.</div>
+        <div id="mois4jour18" class="margin">.</div>
+        <div id="mois4jour19" class="margin">.</div>
+        <div id="mois4jour20" class="margin">.</div>
+        <div id="mois4jour21" class="margin">.</div>
+        <div id="mois4jour22" class="margin">.</div>
+        <div id="mois4jour23" class="margin">.</div>
+        <div id="mois4jour24" class="margin">.</div>
+        <div id="mois4jour25" class="margin">.</div>
+        <div id="mois4jour26" class="margin">.</div>
+        <div id="mois4jour27" class="margin">.</div>
+        <div id="mois4jour28" class="margin">.</div>
+        <div id="mois4jour29" class="margin">.</div>
+        <div id="mois4jour30" class="margin">.</div>
+        <div id="mois4jour31" class="margin">.</div>
+        <div id="mois4jour32" class="margin">.</div>
+        <div id="mois4jour33" class="margin">.</div>
+        <div id="mois4jour34" class="margin">.</div>
+        <div id="mois4jour35" class="margin">.</div>
+        <div id="mois4jour36" class="margin">.</div>
+
+      </td>
+      <td class="impair centre" colspan="3 ">
+        <div class="align">Mai</div>
+        <div id="mois5jour0" class="margin" data-value="Samedi">.</div>
+        <div id="mois5jour1" class="margin" data-value="Dimanche">.</div>
+        <div id="mois5jour2" class="margin" data-value="Lundi">.</div>
+        <div id="mois5jour3" class="margin" data-value="Mardi">.</div>
+        <div id="mois5jour4" class="margin" data-value="Mercredi">.</div>
+        <div id="mois5jour5" class="margin" data-value="Jeudi">.</div>
+        <div id="mois5jour6" class="margin" data-value="Vendredi">.</div>
+        <div id="mois5jour7" class="margin" data-value="Samedi">.</div>
+        <div id="mois5jour8" class="margin">.</div>
+        <div id="mois5jour9" class="margin">.</div>
+        <div id="mois5jour10" class="margin">.</div>
+        <div id="mois5jour11" class="margin">.</div>
+        <div id="mois5jour12" class="margin">.</div>
+        <div id="mois5jour13" class="margin">.</div>
+        <div id="mois5jour14" class="margin">.</div>
+        <div id="mois5jour15" class="margin">.</div>
+        <div id="mois5jour16" class="margin">.</div>
+        <div id="mois5jour17" class="margin">.</div>
+        <div id="mois5jour18" class="margin">.</div>
+        <div id="mois5jour19" class="margin">.</div>
+        <div id="mois5jour20" class="margin">.</div>
+        <div id="mois5jour21" class="margin">.</div>
+        <div id="mois5jour22" class="margin">.</div>
+        <div id="mois5jour23" class="margin">.</div>
+        <div id="mois5jour24" class="margin">.</div>
+        <div id="mois5jour25" class="margin">.</div>
+        <div id="mois5jour26" class="margin">.</div>
+        <div id="mois5jour27" class="margin">.</div>
+        <div id="mois5jour28" class="margin">.</div>
+        <div id="mois5jour29" class="margin">.</div>
+        <div id="mois5jour30" class="margin">.</div>
+        <div id="mois5jour31" class="margin">.</div>
+        <div id="mois5jour32" class="margin">.</div>
+        <div id="mois5jour33" class="margin">.</div>
+        <div id="mois5jour34" class="margin">.</div>
+        <div id="mois5jour35" class="margin">.</div>
+        <div id="mois5jour36" class="margin">.</div>
+
+      </td>
+      <td class="pair centre" colspan="3 ">
+        <div class="align">Juin</div>
+        <div id="mois6jour0" class="margin" data-value="Samedi">.</div>
+        <div id="mois6jour1" class="margin" data-value="Dimanche">.</div>
+        <div id="mois6jour2" class="margin" data-value="Lundi">.</div>
+        <div id="mois6jour3" class="margin" data-value="Mardi">.</div>
+        <div id="mois6jour4" class="margin" data-value="Mercredi">.</div>
+        <div id="mois6jour5" class="margin" data-value="Jeudi">.</div>
+        <div id="mois6jour6" class="margin" data-value="Vendredi">.</div>
+        <div id="mois6jour7" class="margin" data-value="Samedi">.</div>
+        <div id="mois6jour8" class="margin">.</div>
+        <div id="mois6jour9" class="margin">.</div>
+        <div id="mois6jour10" class="margin">.</div>
+        <div id="mois6jour11" class="margin">.</div>
+        <div id="mois6jour12" class="margin">.</div>
+        <div id="mois6jour13" class="margin">.</div>
+        <div id="mois6jour14" class="margin">.</div>
+        <div id="mois6jour15" class="margin">.</div>
+        <div id="mois6jour16" class="margin">.</div>
+        <div id="mois6jour17" class="margin">.</div>
+        <div id="mois6jour18" class="margin">.</div>
+        <div id="mois6jour19" class="margin">.</div>
+        <div id="mois6jour20" class="margin">.</div>
+        <div id="mois6jour21" class="margin">.</div>
+        <div id="mois6jour22" class="margin">.</div>
+        <div id="mois6jour23" class="margin">.</div>
+        <div id="mois6jour24" class="margin">.</div>
+        <div id="mois6jour25" class="margin">.</div>
+        <div id="mois6jour26" class="margin">.</div>
+        <div id="mois6jour27" class="margin">.</div>
+        <div id="mois6jour28" class="margin">.</div>
+        <div id="mois6jour29" class="margin">.</div>
+        <div id="mois6jour30" class="margin">.</div>
+        <div id="mois6jour31" class="margin">.</div>
+        <div id="mois6jour32" class="margin">.</div>
+        <div id="mois6jour33" class="margin">.</div>
+        <div id="mois6jour34" class="margin">.</div>
+        <div id="mois6jour35" class="margin">.</div>
+        <div id="mois6jour36" class="margin">.</div>
+
+
+      </td>
+      <td class="impair centre" colspan="3 ">
+        <div class="align">Juillet</div>
+        <div id="mois7jour0" class="margin" data-value="Samedi">.</div>
+        <div id="mois7jour1" class="margin" data-value="Dimanche">.</div>
+        <div id="mois7jour2" class="margin" data-value="Lundi">.</div>
+        <div id="mois7jour3" class="margin" data-value="Mardi">.</div>
+        <div id="mois7jour4" class="margin" data-value="Mercredi">.</div>
+        <div id="mois7jour5" class="margin" data-value="Jeudi">.</div>
+        <div id="mois7jour6" class="margin" data-value="Vendredi">.</div>
+        <div id="mois7jour7" class="margin" data-value="Samedi">.</div>
+        <div id="mois7jour8" class="margin">.</div>
+        <div id="mois7jour9" class="margin">.</div>
+        <div id="mois7jour10" class="margin">.</div>
+        <div id="mois7jour11" class="margin">.</div>
+        <div id="mois7jour12" class="margin">.</div>
+        <div id="mois7jour13" class="margin">.</div>
+        <div id="mois7jour14" class="margin">.</div>
+        <div id="mois7jour15" class="margin">.</div>
+        <div id="mois7jour16" class="margin">.</div>
+        <div id="mois7jour17" class="margin">.</div>
+        <div id="mois7jour18" class="margin">.</div>
+        <div id="mois7jour19" class="margin">.</div>
+        <div id="mois7jour20" class="margin">.</div>
+        <div id="mois7jour21" class="margin">.</div>
+        <div id="mois7jour22" class="margin">.</div>
+        <div id="mois7jour23" class="margin">.</div>
+        <div id="mois7jour24" class="margin">.</div>
+        <div id="mois7jour25" class="margin">.</div>
+        <div id="mois7jour26" class="margin">.</div>
+        <div id="mois7jour27" class="margin">.</div>
+        <div id="mois7jour28" class="margin">.</div>
+        <div id="mois7jour29" class="margin">.</div>
+        <div id="mois7jour30" class="margin">.</div>
+        <div id="mois7jour31" class="margin">.</div>
+        <div id="mois7jour32" class="margin">.</div>
+        <div id="mois7jour33" class="margin">.</div>
+        <div id="mois7jour34" class="margin">.</div>
+        <div id="mois7jour35" class="margin">.</div>
+        <div id="mois7jour36" class="margin">.</div>
+
+      </td>
+      <td class="pair centre" colspan="3 ">
+        <div class="align">Août</div>
+        <div id="mois8jour0" class="margin" data-value="Samedi">.</div>
+        <div id="mois8jour1" class="margin" data-value="Dimanche">.</div>
+        <div id="mois8jour2" class="margin" data-value="Lundi">.</div>
+        <div id="mois8jour3" class="margin" data-value="Mardi">.</div>
+        <div id="mois8jour4" class="margin" data-value="Mercredi">.</div>
+        <div id="mois8jour5" class="margin" data-value="Jeudi">.</div>
+        <div id="mois8jour6" class="margin" data-value="Vendredi">.</div>
+        <div id="mois8jour7" class="margin" data-value="Samedi">.</div>
+        <div id="mois8jour8" class="margin">.</div>
+        <div id="mois8jour9" class="margin">.</div>
+        <div id="mois8jour10" class="margin">.</div>
+        <div id="mois8jour11" class="margin">.</div>
+        <div id="mois8jour12" class="margin">.</div>
+        <div id="mois8jour13" class="margin">.</div>
+        <div id="mois8jour14" class="margin">.</div>
+        <div id="mois8jour15" class="margin">.</div>
+        <div id="mois8jour16" class="margin">.</div>
+        <div id="mois8jour17" class="margin">.</div>
+        <div id="mois8jour18" class="margin">.</div>
+        <div id="mois8jour19" class="margin">.</div>
+        <div id="mois8jour20" class="margin">.</div>
+        <div id="mois8jour21" class="margin">.</div>
+        <div id="mois8jour22" class="margin">.</div>
+        <div id="mois8jour23" class="margin">.</div>
+        <div id="mois8jour24" class="margin">.</div>
+        <div id="mois8jour25" class="margin">.</div>
+        <div id="mois8jour26" class="margin">.</div>
+        <div id="mois8jour27" class="margin">.</div>
+        <div id="mois8jour28" class="margin">.</div>
+        <div id="mois8jour29" class="margin">.</div>
+        <div id="mois8jour30" class="margin">.</div>
+        <div id="mois8jour31" class="margin">.</div>
+        <div id="mois8jour32" class="margin">.</div>
+        <div id="mois8jour33" class="margin">.</div>
+        <div id="mois8jour34" class="margin">.</div>
+        <div id="mois8jour35" class="margin">.</div>
+        <div id="mois8jour36" class="margin">.</div>
+
+
+      </td>
+      <td class="impair centre" colspan="3 ">
+        <div class="align">Septembre</div>
+        <div id="mois9jour0" class="margin" data-value="Samedi">.</div>
+        <div id="mois9jour1" class="margin" data-value="Dimanche">.</div>
+        <div id="mois9jour2" class="margin" data-value="Lundi">.</div>
+        <div id="mois9jour3" class="margin" data-value="Mardi">.</div>
+        <div id="mois9jour4" class="margin" data-value="Mercredi">.</div>
+        <div id="mois9jour5" class="margin" data-value="Jeudi">.</div>
+        <div id="mois9jour6" class="margin" data-value="Vendredi">.</div>
+        <div id="mois9jour7" class="margin" data-value="Samedi">.</div>
+        <div id="mois9jour8" class="margin">.</div>
+        <div id="mois9jour9" class="margin">.</div>
+        <div id="mois9jour10" class="margin">.</div>
+        <div id="mois9jour11" class="margin">.</div>
+        <div id="mois9jour12" class="margin">.</div>
+        <div id="mois9jour13" class="margin">.</div>
+        <div id="mois9jour14" class="margin">.</div>
+        <div id="mois9jour15" class="margin">.</div>
+        <div id="mois9jour16" class="margin">.</div>
+        <div id="mois9jour17" class="margin">.</div>
+        <div id="mois9jour18" class="margin">.</div>
+        <div id="mois9jour19" class="margin">.</div>
+        <div id="mois9jour20" class="margin">.</div>
+        <div id="mois9jour21" class="margin">.</div>
+        <div id="mois9jour22" class="margin">.</div>
+        <div id="mois9jour23" class="margin">.</div>
+        <div id="mois9jour24" class="margin">.</div>
+        <div id="mois9jour25" class="margin">.</div>
+        <div id="mois9jour26" class="margin">.</div>
+        <div id="mois9jour27" class="margin">.</div>
+        <div id="mois9jour28" class="margin">.</div>
+        <div id="mois9jour29" class="margin">.</div>
+        <div id="mois9jour30" class="margin">.</div>
+        <div id="mois9jour31" class="margin">.</div>
+        <div id="mois9jour32" class="margin">.</div>
+        <div id="mois9jour33" class="margin">.</div>
+        <div id="mois9jour34" class="margin">.</div>
+        <div id="mois9jour35" class="margin">.</div>
+        <div id="mois9jour36" class="margin">.</div>
+
+
+      </td>
+      <td class="pair centre" colspan="3 ">
+        <div class="align">Octobre</div>
+        <div id="mois10jour0" class="margin" data-value="Samedi">.</div>
+        <div id="mois10jour1" class="margin" data-value="Dimanche">.</div>
+        <div id="mois10jour2" class="margin" data-value="Lundi">.</div>
+        <div id="mois10jour3" class="margin" data-value="Mardi">.</div>
+        <div id="mois10jour4" class="margin" data-value="Mercredi">.</div>
+        <div id="mois10jour5" class="margin" data-value="Jeudi">.</div>
+        <div id="mois10jour6" class="margin" data-value="Vendredi">.</div>
+        <div id="mois10jour7" class="margin" data-value="Samedi">.</div>
+        <div id="mois10jour8" class="margin">.</div>
+        <div id="mois10jour9" class="margin">.</div>
+        <div id="mois10jour10" class="margin">.</div>
+        <div id="mois10jour11" class="margin">.</div>
+        <div id="mois10jour12" class="margin">.</div>
+        <div id="mois10jour13" class="margin">.</div>
+        <div id="mois10jour14" class="margin">.</div>
+        <div id="mois10jour15" class="margin">.</div>
+        <div id="mois10jour16" class="margin">.</div>
+        <div id="mois10jour17" class="margin">.</div>
+        <div id="mois10jour18" class="margin">.</div>
+        <div id="mois10jour19" class="margin">.</div>
+        <div id="mois10jour20" class="margin">.</div>
+        <div id="mois10jour21" class="margin">.</div>
+        <div id="mois10jour22" class="margin">.</div>
+        <div id="mois10jour23" class="margin">.</div>
+        <div id="mois10jour24" class="margin">.</div>
+        <div id="mois10jour25" class="margin">.</div>
+        <div id="mois10jour26" class="margin">.</div>
+        <div id="mois10jour27" class="margin">.</div>
+        <div id="mois10jour28" class="margin">.</div>
+        <div id="mois10jour29" class="margin">.</div>
+        <div id="mois10jour30" class="margin">.</div>
+        <div id="mois10jour31" class="margin">.</div>
+        <div id="mois10jour32" class="margin">.</div>
+        <div id="mois10jour33" class="margin">.</div>
+        <div id="mois10jour34" class="margin">.</div>
+        <div id="mois10jour35" class="margin">.</div>
+        <div id="mois10jour36" class="margin">.</div>
+
+      </td>
+      <td class="impair centre" colspan="3 ">
+        <div class="align">Novembre</div>
+        <div id="mois11jour0" class="margin" data-value="Samedi">.</div>
+        <div id="mois11jour1" class="margin" data-value="Dimanche">.</div>
+        <div id="mois11jour2" class="margin" data-value="Lundi">.</div>
+        <div id="mois11jour3" class="margin" data-value="Mardi">.</div>
+        <div id="mois11jour4" class="margin" data-value="Mercredi">.</div>
+        <div id="mois11jour5" class="margin" data-value="Jeudi">.</div>
+        <div id="mois11jour6" class="margin" data-value="Vendredi">.</div>
+        <div id="mois11jour7" class="margin" data-value="Samedi">.</div>
+        <div id="mois11jour8" class="margin">.</div>
+        <div id="mois11jour9" class="margin">.</div>
+        <div id="mois11jour10" class="margin">.</div>
+        <div id="mois11jour11" class="margin">.</div>
+        <div id="mois11jour12" class="margin">.</div>
+        <div id="mois11jour13" class="margin">.</div>
+        <div id="mois11jour14" class="margin">.</div>
+        <div id="mois11jour15" class="margin">.</div>
+        <div id="mois11jour16" class="margin">.</div>
+        <div id="mois11jour17" class="margin">.</div>
+        <div id="mois11jour18" class="margin">.</div>
+        <div id="mois11jour19" class="margin">.</div>
+        <div id="mois11jour20" class="margin">.</div>
+        <div id="mois11jour21" class="margin">.</div>
+        <div id="mois11jour22" class="margin">.</div>
+        <div id="mois11jour23" class="margin">.</div>
+        <div id="mois11jour24" class="margin">.</div>
+        <div id="mois11jour25" class="margin">.</div>
+        <div id="mois11jour26" class="margin">.</div>
+        <div id="mois11jour27" class="margin">.</div>
+        <div id="mois11jour28" class="margin">.</div>
+        <div id="mois11jour29" class="margin">.</div>
+        <div id="mois11jour30" class="margin">.</div>
+        <div id="mois11jour31" class="margin">.</div>
+        <div id="mois11jour32" class="margin">.</div>
+        <div id="mois11jour33" class="margin">.</div>
+        <div id="mois11jour34" class="margin">.</div>
+        <div id="mois11jour35" class="margin">.</div>
+        <div id="mois11jour36" class="margin">.</div>
+
+
+      </td>
+      <td class="pair centre" colspan="3 ">
+        <div class="align">Décembre</div>
+        <div id="mois12jour0" class="margin" data-value="Samedi">.</div>
+        <div id="mois12jour1" class="margin" data-value="Dimanche">.</div>
+        <div id="mois12jour2" class="margin" data-value="Lundi">.</div>
+        <div id="mois12jour3" class="margin" data-value="Mardi">.</div>
+        <div id="mois12jour4" class="margin" data-value="Mercredi">.</div>
+        <div id="mois12jour5" class="margin" data-value="Jeudi">.</div>
+        <div id="mois12jour6" class="margin" data-value="Vendredi">.</div>
+        <div id="mois12jour7" class="margin" data-value="Samedi">.</div>
+        <div id="mois12jour8" class="margin">.</div>
+        <div id="mois12jour9" class="margin">.</div>
+        <div id="mois12jour10" class="margin">.</div>
+        <div id="mois12jour11" class="margin">.</div>
+        <div id="mois12jour12" class="margin">.</div>
+        <div id="mois12jour13" class="margin">.</div>
+        <div id="mois12jour14" class="margin">.</div>
+        <div id="mois12jour15" class="margin">.</div>
+        <div id="mois12jour16" class="margin">.</div>
+        <div id="mois12jour17" class="margin">.</div>
+        <div id="mois12jour18" class="margin">.</div>
+        <div id="mois12jour19" class="margin">.</div>
+        <div id="mois12jour20" class="margin">.</div>
+        <div id="mois12jour21" class="margin">.</div>
+        <div id="mois12jour22" class="margin">.</div>
+        <div id="mois12jour23" class="margin">.</div>
+        <div id="mois12jour24" class="margin">.</div>
+        <div id="mois12jour25" class="margin">.</div>
+        <div id="mois12jour26" class="margin">.</div>
+        <div id="mois12jour27" class="margin">.</div>
+        <div id="mois12jour28" class="margin">.</div>
+        <div id="mois12jour29" class="margin">.</div>
+        <div id="mois12jour30" class="margin">.</div>
+        <div id="mois12jour31" class="margin">.</div>
+        <div id="mois12jour32" class="margin">.</div>
+        <div id="mois12jour33" class="margin">.</div>
+        <div id="mois12jour34" class="margin">.</div>
+        <div id="mois12jour35" class="margin">.</div>
+        <div id="mois12jour36" class="margin">.</div>
+
+
+      </td>
+    </tbody>
+  </table>
+  <!--Et on signe tous ensemble-->
+  <footer>
+    <h3>Calendrier Incroyable proposé par Corentin, Julien, Claude,Serhat et Guillaume</h3>
+  </footer>
+
+  <div id="insererImage"></div>
+  <script src="assets/js/index.js "></script>
+  <script src="assets/js/abc.js "></script>
+  <script src="assets/js/blague.js "></script>
+  <script src="assets/js/cliquable.js "></script>
+  <script src="assets/js/entete.js "></script>
+</body>
+
+</html>
